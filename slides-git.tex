@@ -1,0 +1,61 @@
+\documentclass[%handout %handout erstellen
+]{beamer}
+
+\usepackage[utf8]{inputenc}
+\usepackage[naustrian]{babel}
+\usepackage{color}
+\usepackage{url}
+\usepackage{lmodern}
+\usepackage{listings}
+
+\hypersetup{pdftitle={\inserttitle},
+  pdfsubject={\inserttitle},
+  pdfauthor={\insertauthor},
+  pdfkeywords={\inserttitle},
+  pdfpagelabels={false},
+%  pdfpagemode={FullScreen}
+}
+
+\usetheme{progressbar}
+\progressbaroptions{headline=none,frametitle=picture-section,imagename=img/logo.jpg}
+%\setbeamercovered{transparent}  %halbtransparente uebergaenge
+\beamertemplatenavigationsymbolsempty 	%keine nav-symbole
+
+\mode<handout>{
+  \setbeameroption{show notes}  %notizen nur bei handouts
+  \usepackage{pgfpages}
+  \pgfpagesuselayout{2 on 1}[a4paper, border shrink=5mm]
+%  \pgfpagesuselayout{4 on 1}[a4paper, landscape, border shrink=5mm]
+  \pgfpageslogicalpageoptions{1}{border code=\pgfusepath{stroke}}
+  \pgfpageslogicalpageoptions{2}{border code=\pgfusepath{stroke}}
+%  \pgfpageslogicalpageoptions{3}{border code=\pgfusepath{stroke}}
+%  \pgfpageslogicalpageoptions{4}{border code=\pgfusepath{stroke}}
+}
+
+\title{git workshop}
+\subtitle{valug - 2011}
+\author[Florian Preinstorfer, Wolfgang Silbermayr]{Florian Preinstorfer, Wolfgang Silbermayr}
+\date[valug - xx.xx.xxxx]{xx.xx.xx}
+%\titlegraphic{\includegraphics[height=1cm]{img/logo.png}}
+%\logo{\includegraphics[height=0.4cm]{img/logo.png}}
+
+\begin{document}
+\frame[plain]{\titlepage}
+
+\begin{frame}{Inhalt}
+  \tableofcontents[pausesections]
+\end{frame}
+
+%\include{slides/x} %section, subsection, frames
+%\include{slides/y} %section, subsection, frames
+
+\begin{frame}[plain]
+  \begin{center}
+  Fragen?
+
+  Danke!
+  \end{center}
+\end{frame}
+\end{document}
+
+% vim: tabstop=2 expandtab shiftwidth=2 softtabstop=2 autoindent
