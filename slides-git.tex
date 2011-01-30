@@ -16,10 +16,13 @@
 %  pdfpagemode={FullScreen}
 }
 
-\usetheme{progressbar}
-\progressbaroptions{headline=none,frametitle=picture-section,imagename=img/logo.jpg}
+\definecolor{GitAddGreen}{rgb}{0, 0.5, 0} 
+\definecolor{GitRemoveRed}{rgb}{0.75, 0, 0} 
+
+\usetheme{Singapore}
+%\progressbaroptions{headline=none,frametitle=picture-section,imagename=img/logo.jpg}
 %\setbeamercovered{transparent}  %halbtransparente uebergaenge
-\beamertemplatenavigationsymbolsempty 	%keine nav-symbole
+%\beamertemplatenavigationsymbolsempty 	%keine nav-symbole
 
 \mode<handout>{
   \setbeameroption{show notes}  %notizen nur bei handouts
@@ -32,10 +35,11 @@
 %  \pgfpageslogicalpageoptions{4}{border code=\pgfusepath{stroke}}
 }
 
-\title{git workshop}
-\subtitle{valug - 2011}
+\title{Git Workshop}
+\subtitle{VALUG - 8. April 2011}
 \author[Florian Preinstorfer, Wolfgang Silbermayr]{Florian Preinstorfer, Wolfgang Silbermayr}
-\date[valug - xx.xx.xxxx]{xx.xx.xx}
+\date[valug - 08.04.2011]{08.04.2011}
+\titlegraphic{\textbf{\texttt{\color{GitRemoveRed}---\linebreak\color{GitAddGreen}git\linebreak+++}}}
 %\titlegraphic{\includegraphics[height=1cm]{img/logo.png}}
 %\logo{\includegraphics[height=0.4cm]{img/logo.png}}
 
