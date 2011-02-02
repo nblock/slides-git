@@ -1,12 +1,10 @@
-pdf: slides-git.pdf
+#requires latexmk from http://www.phys.psu.edu/~collins/software/latexmk-jcc/ to build
 
-slides-git.pdf: slides-git.tex
-	pdflatex slides-git.tex
-	pdflatex slides-git.tex
-
-rebuild: clean pdf
+pdf: slides-git.tex
+	@latexmk -pdf $<
 
 clean:
-	rm *.aux *.log *.nav *.out *.pdf *.snm *.toc
+	@latexmk -CA
+	@rm -f *.nav *.snm
 
 .PHONY: clean
