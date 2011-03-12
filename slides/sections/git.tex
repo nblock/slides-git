@@ -1,0 +1,40 @@
+\section{git}
+
+\begin{frame}
+  \tableofcontents[currentsection]
+\end{frame}
+
+\begin{frame}{Installation}
+  \begin{itemize}
+    \item Linux:
+    \begin{itemize}
+      \item Debian, Ubuntu: \texttt{[sudo] apt-get install \textit{git-core}}
+      \item Arch:\texttt{[sudo] pacman -S \textit{git}}
+    \end{itemize}
+    \item Windows:
+    \begin{itemize}
+      \item MySysGit: \url{http://code.google.com/p/msysgit}
+      \item TortoiseGit: \url{http://code.google.com/p/tortoisegit}
+    \end{itemize}
+    \item Mac:
+    \begin{itemize}
+      \item Git for OS X: \url{http://code.google.com/p/git-osx-installer}
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{initiale Konfiguration}
+  \begin{itemize}
+    \item Identität festlegen:
+    \begin{lstlisting}
+$ git config --global user.name "John Doe"
+$ git config --global user.email johndoe@example.com
+    \end{lstlisting}
+    \item Editor festlegen (optional):
+    \begin{lstlisting}
+$ git config --global core.editor whatever
+    \end{lstlisting}
+    \end{itemize}
+\end{frame}
+
+% vim: tabstop=2 expandtab shiftwidth=2 softtabstop=2 autoindent
