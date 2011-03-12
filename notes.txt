@@ -1,0 +1,22 @@
+allgemeines
+ -was ist versionskontrolle
+ -zentral (beispiele)
+ -dezentral (beispiele)
+ -git
+
+1. projekt
+ -installation (email, name)
+ -git init workflow (add, gitignore commit (messages!), staging area)
+ -git[g,k]
+ -status, diff (viewer)
+
+collaboration
+ -git clone (bekanntes beispiel, viele branches)
+ -github/gitorious erwähnen
+ -gitorious anlegen und clone von demo projekt
+ -editieren & commit
+ -git push
+
+branching & merging bei bedarf
+
+referenzen
