@@ -37,6 +37,25 @@ $ git config --global core.editor whatever
     \end{itemize}
 \end{frame}
 
+\begin{frame}{Die möglichen Zustände einer Datei}
+  \begin{columns}
+    \begin{column}{0.45\textwidth}
+      \begin{figure}
+        \includegraphics[width=\textwidth]{img/file_lifecycle}
+        \caption[format=empty]{Quelle: \url{http://progit.org}}
+      \end{figure}
+    \end{column}
+    \begin{column}{0.65\textwidth}
+      \begin{itemize}
+        \item nicht versioniert (\textbf{untracked})
+        \item versioniert, aber unverändert (\textbf{unmodified})
+        \item versioniert und verändert (\textbf{modified})
+        \item versioniert, verändert und in der „staging area“ (\textbf{staged})
+      \end{itemize}
+    \end{column}
+  \end{columns}
+\end{frame}
+
 \begin{frame}[fragile]{typischer Workflow}
   \begin{itemize}
     \item Initialisieren eines git Repositories
