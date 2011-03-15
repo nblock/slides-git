@@ -37,4 +37,39 @@ $ git config --global core.editor whatever
     \end{itemize}
 \end{frame}
 
+\begin{frame}[fragile]{typischer Workflow}
+  \begin{itemize}
+    \item Initialisieren eines git Repositories
+    \begin{lstlisting}
+cd meinprojekt
+git init
+    \end{lstlisting}
+    \item Dateien der „staging area“ hinzufügen
+    \begin{lstlisting}
+git add <file>
+    \end{lstlisting}
+    \item Änderungen in der „staging area“ committen
+    \begin{lstlisting}
+git commit -m 'initial commit'
+    \end{lstlisting}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Änderungen betrachten}
+  \begin{itemize}
+    \item Den aktuellen Status des Repositories betrachten
+    \begin{lstlisting}
+git status
+    \end{lstlisting}
+    \item Änderungen im Arbeitsverzeichnis betrachten
+    \begin{lstlisting}
+git diff
+    \end{lstlisting}
+    \item Änderungen betrachten, die sich bereits in der „staging area“ befinden
+    \begin{lstlisting}
+git diff --cached
+    \end{lstlisting}
+  \end{itemize}
+\end{frame}
+
 % vim: tabstop=2 expandtab shiftwidth=2 softtabstop=2 autoindent
