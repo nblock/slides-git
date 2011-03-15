@@ -6,9 +6,11 @@ allgemeines
 
 1. projekt
  -installation (email, name)
- -git init workflow (add, gitignore commit (messages!), staging area)
+ -konzept (staging area)
+ -git init workflow (edit, add, commit)
  -git[g,k]
  -status, diff (viewer)
+ -Tipps und Tricks (commit messages, gitignore, …)
 
 collaboration
  -git clone (bekanntes beispiel, viele branches)
