@@ -91,4 +91,32 @@ git diff --cached
   \end{itemize}
 \end{frame}
 
+\begin{frame}[fragile]{Tipps und Tricks}
+  \begin{itemize}
+    \item keine temporären Dateien in das git Repository aufnehmen
+    \begin{itemize}
+      \item erschwert das effiziente Arbeiten mit git
+      \item bläht das Repository auf
+    \begin{lstlisting}
+cat .gitignore
+*.swp       #alle swp Dateien
+doc/*.aux   #alle aux Dateien im Verzeichnis doc/
+tmp/**/*    #alle Dateien im Verzeichnis tmp/
+    \end{lstlisting}
+    \end{itemize}
+    \item aussagekräftige commit messages
+    \begin{itemize}
+      \item beschleunigt das betrachten von Änderungen
+      \item aussagekräftige Zusammenfassung (<80 Zeichen)
+      \item ausführliche Zusammenfassung
+    %todo
+    \begin{lstlisting}
+summary
+
+this is a detailed summary 
+    \end{lstlisting}
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
 % vim: tabstop=2 expandtab shiftwidth=2 softtabstop=2 autoindent
