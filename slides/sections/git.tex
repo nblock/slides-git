@@ -127,4 +127,31 @@ two together.
   \end{lstlisting}
 \end{frame}
 
+\begin{frame}[fragile]{Tipps und Tricks}
+  \begin{itemize}
+    \item Tagging
+    \begin{itemize}
+      \item verpasst einem bestimmten Versionsstand eine Markierung
+      \item wird oft vewendet, um Releases zu markieren (Bsp: \texttt{v1.1})
+      \item ermöglicht das schnelle Arbeiten mit unterschiedlichen Versionen des Repositories
+    \end{itemize}
+  \item alle existierenden Tags anzeigen
+    \begin{lstlisting}
+$ git tag
+    \end{lstlisting}
+  \item einen einfachen Tag erstellen
+    \begin{lstlisting}
+$ git tag v1.1
+    \end{lstlisting}
+  \item einen ausführlichen Tag erstellen (mit Name, commit message, \ldots)
+    \begin{lstlisting}
+$ git tag -a v1.1
+    \end{lstlisting}
+  \item einen ausführlichen, mit GPG signierten, Tag erstellen
+    \begin{lstlisting}
+$ git tag -s v1.1
+    \end{lstlisting}
+  \end{itemize}
+\end{frame}
+
 % vim: tabstop=2 expandtab shiftwidth=2 softtabstop=2 autoindent
