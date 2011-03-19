@@ -19,30 +19,33 @@ Versionsverwaltung kommt auch bei Büroanwendungen oder
 Content-Management-Systemen zum Einsatz.
 \end{frame}
 
-\begin{frame}{Lokale Versionsverwaltung}
+\begin{frame}[allowframebreaks]{Versionsverwaltungs-Arten}
   \begin{itemize}
-    \item Single-User
-    \item System kennt keine anderen Arbeitskopien oder Beutzer
-    \item Mittlerweile kaum noch Bedeutung
-    \item Beispiel: rcs
-  \end{itemize}
-\end{frame}
+    \item Lokale Versionsverwaltung:
+    \begin{itemize}
+      \item Single-User
+      \item System kennt keine anderen Arbeitskopien oder Beutzer
+      \item Mittlerweile kaum noch Bedeutung
+      \item Beispiel: rcs
+    \end{itemize}
+    \framebreak
 
-\begin{frame}{Zentrale Versionsverwaltung}
-  \begin{itemize}
-    \item Ein ,,heiliges'' Repository für alle Benutzer
-    \item Repository meist auf einem Server
-    \item Jedes Einchecken von Änderungen benötigt Zugriff auf das Repository, also Netzwerkverbindung
-    \item Beispiele: CVS, Subversion
-  \end{itemize}
-\end{frame}
+    \item Zentrale Versionsverwaltung
+    \begin{itemize}
+      \item Ein ,,heiliges'' Repository für alle Benutzer
+      \item Repository meist auf einem Server
+      \item Jedes Einchecken von Änderungen benötigt Zugriff auf das Repository, also Netzwerkverbindung
+      \item Beispiele: CVS, Subversion
+    \end{itemize}
+    \framebreak
 
-\begin{frame}{Dezentrale Versionsverwaltung}
-  \begin{itemize}
-    \item Arbeitskopie beinhaltet automatisch Repository
-    \item Repositories können im Netz veröffentlicht werden
-    \item Veröffentlichte Repositories können geklont werden
-    \item Beispiele: git, Bazaar, Mercurial, Monotone
+    \item Dezentrale Versionsverwaltung
+    \begin{itemize}
+      \item Arbeitskopie beinhaltet automatisch Repository
+      \item Repositories können im Netz veröffentlicht werden
+      \item Veröffentlichte Repositories können geklont werden
+      \item Beispiele: git, Bazaar, Mercurial, Monotone
+    \end{itemize}
   \end{itemize}
 \end{frame}
 
