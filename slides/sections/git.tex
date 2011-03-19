@@ -124,6 +124,48 @@ index 12c5ea5..800639c 100644
   \end{lstlisting}
 \end{frame}
 
+\begin{frame}[fragile, allowframebreaks]{Historie betrachten}
+  \begin{itemize}
+    \item Historie in umgekehrt chronologischer Reihenfolge
+    \begin{lstlisting}
+$ git log
+    \end{lstlisting}
+  \begin{lstlisting}[frame=single]
+commit ebae10784096e1ce3c2d4a8f2dd4cff32edfeaa0
+Author: Wolfgang Silbermayr <wolfgang@example.com>
+Date:   Sat Mar 19 17:38:35 2011 +0100
+
+    %*\textcolor{darkgreen}{Add git-transport image}*)
+
+commit 7198128a60a2c5b20d428722fa0341e0aaaae206
+Author: Florian Preinstorfer <florian@example.com>
+Date:   Sat Mar 19 17:27:12 2011 +0100
+
+    %*\textcolor{darkgreen}{add hosting and collaboration frame}*)
+  \end{lstlisting}
+  \framebreak
+
+    \item Git log erlaubt verschiedene Formatierungsoptionen
+    \item Beispiel:
+    \begin{lstlisting}
+$ git log --pretty=format:'%h : %s' --topo-order --graph
+    \end{lstlisting}
+  \end{itemize}
+  \begin{lstlisting}[frame=single]
+*   ade7f24 : %*\textcolor{darkgreen}{Merge branch 'master' of gitorious.org:valug/git-slides}*)
+|\  
+| * 0bb70f1 : %*\textcolor{darkgreen}{change colors; add caption}*)
+| * eaf4a3b : %*\textcolor{darkgreen}{use color in git status listing}*)
+| *   808256f : %*\textcolor{darkgreen}{Merge branch 'master' of gitorious.org:valug/git-slides}*)
+| |\  
+| * | e63e26a : %*\textcolor{darkgreen}{add status file}*)
+* | | 714815a : %*\textcolor{darkgreen}{Add branching commands}*)
+| |/  
+|/|   
+* | 1ad271e : %*\textcolor{darkgreen}{Some special cases for diff lstlisting highlighting}*)
+  \end{lstlisting}
+\end{frame}
+
 \begin{frame}[allowframebreaks]{Grafische git Tools}
   \begin{columns}
     \begin{column}{0.56\textwidth}
