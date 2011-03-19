@@ -93,22 +93,15 @@ $ git diff
     \begin{lstlisting}
 $ git diff --cached
     \end{lstlisting}
-    \begin{lstlisting}[language=diff]
-diff --git a/lib/simplegit.rb b/lib/simplegit.rb
-index dd5ecc4..8ac6604 100644
---- a/lib/simplegit.rb
-+++ b/lib/simplegit.rb
-@@ -25,6 +25,10 @@ class SimpleGit
-     command("git log -n 25 #{treeish}")
-   end
-
-+  def log_single(branch = 'master')
-+    command("git log --pretty=oneline #{branch}")
-+  end
-+
-   def blame(path)
-     command("git blame #{path}")
-   end
+    \begin{lstlisting}[frame=single, caption=Ausgabe von git diff,language=diff]
+diff --git a/slides/sections/git.tex b/slides/sections/git.tex
+index 12c5ea5..800639c 100644
+@@ -1,4 +1,4 @@
+-\section{git}
++\section{Einstieg in git}
+ 
+ \begin{frame}
+   \tableofcontents[currentsection]
     \end{lstlisting}
   \end{itemize}
 \end{frame}
