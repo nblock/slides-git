@@ -22,17 +22,26 @@
 \definecolor{darkblue}{rgb}{0,0,.5}
 \definecolor{darkgreen}{rgb}{0,.5,0}
 
+\lstdefinelanguage{BashExamples}
+{
+  morekeywords={\$},
+  sensitive=false,
+  morecomment=[l]{\#},
+  morestring=[b]{"}
+}
+
 \lstset{
   extendedchars=\true,
-  language=Bash,
+  language=BashExamples,
   frame=none,
   captionpos=b,
   basicstyle={\fontsize{9}{9}\ttfamily},
   tabsize=2,
-  keywordstyle=\color{darkred},
+  keywordstyle=\color{darkblue},
   commentstyle=\color{darkblue},
   stringstyle=\color{darkgreen}
 }
+
 
 \usetheme{Singapore}
 %\progressbaroptions{headline=none,frametitle=picture-section,imagename=img/logo.jpg}
