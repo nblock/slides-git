@@ -81,6 +81,24 @@ $ git commit -m 'initial commit'
 $ git status
     \end{lstlisting}
   \end{itemize}
+  \begin{lstlisting}[language=diff,frame=single,caption={Ausgabe von git status}]
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+# %*\textcolor{darkgreen}{modified:   LICENSE}*)
+#
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working dir)
+#
+# %*\textcolor{darkred}{modified:   notes.txt}*)
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+# %*\textcolor{darkred}{test.txt}*)
+  \end{lstlisting}
 \end{frame}
 
 \begin{frame}[fragile]{Änderungen betrachten}
@@ -93,7 +111,8 @@ $ git diff
     \begin{lstlisting}
 $ git diff --cached
     \end{lstlisting}
-    \begin{lstlisting}[frame=single, caption=Ausgabe von git diff,language=diff]
+  \end{itemize}
+  \begin{lstlisting}[frame=single, caption=Ausgabe von git diff,language=diff]
 diff --git a/slides/sections/git.tex b/slides/sections/git.tex
 index 12c5ea5..800639c 100644
 @@ -1,4 +1,4 @@
@@ -102,8 +121,7 @@ index 12c5ea5..800639c 100644
  
  \begin{frame}
    \tableofcontents[currentsection]
-    \end{lstlisting}
-  \end{itemize}
+  \end{lstlisting}
 \end{frame}
 
 \begin{frame}[allowframebreaks]{Grafische git Tools}

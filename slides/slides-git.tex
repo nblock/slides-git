@@ -16,9 +16,9 @@
   pdfpagelabels={false},
 %  pdfpagemode={FullScreen}
 }
-\definecolor{darkred}{rgb}{.7,0,0}
+\definecolor{darkred}{rgb}{.8,0,0}
 \definecolor{darkblue}{rgb}{0,0,.5}
-\definecolor{darkgreen}{rgb}{0,.5,0}
+\definecolor{darkgreen}{rgb}{0,.6,0}
 
 \lstdefinelanguage{BashExamples}
 {
@@ -37,9 +37,9 @@
   morecomment=[l][\color{darkgreen}]{+++},
   morecomment=[l][\color{darkgreen}]{+\ \ },
   morecomment=[l][\color{darkgreen}]{+\\},
-  morecomment=[l][\color{red}]{---},
-  morecomment=[l][\color{red}]{-\ \ },
-  morecomment=[l][\color{red}]{-\\},
+  morecomment=[l][\color{darkred}]{---},
+  morecomment=[l][\color{darkred}]{-\ \ },
+  morecomment=[l][\color{darkred}]{-\\},
 }
 
 \lstset{
@@ -51,7 +51,8 @@
   tabsize=2,
   keywordstyle=\color{darkblue},
   commentstyle=\color{darkblue},
-  stringstyle=\color{darkgreen}
+  stringstyle=\color{darkgreen},
+  escapeinside={\%*}{*)}
 }
 
 
