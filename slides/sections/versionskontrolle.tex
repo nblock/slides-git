@@ -1,10 +1,49 @@
-\section{Versionskontrolle}
+\section{Versionsverwaltung}
 
 \begin{frame}
   \tableofcontents[currentsection]
 \end{frame}
 
-\begin{frame}{Was ist Versionskontrolle}
+\begin{frame}{Was ist Versionsverwaltung}
+Aus der Wikipedia:
+
+Eine Versionsverwaltung ist ein System,
+das zur \textbf{Erfassung von Änderungen an
+Dokumenten oder Dateien verwendet wird}.
+Alle Versionen werden in einem \textbf{Archiv} mit
+Zeitstempel und Benutzerkennung gesichert und können
+später \textbf{wiederhergestellt} werden.
+Versionsverwaltungssysteme werden typischerweise in der
+Softwareentwicklung eingesetzt um Quelltexte zu verwalten.
+Versionsverwaltung kommt auch bei Büroanwendungen oder
+Content-Management-Systemen zum Einsatz.
+\end{frame}
+
+\begin{frame}{Lokale Versionsverwaltung}
+  \begin{itemize}
+    \item Single-User
+    \item System kennt keine anderen Arbeitskopien oder Beutzer
+    \item Mittlerweile kaum noch Bedeutung
+    \item Beispiel: rcs
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Zentrale Versionsverwaltung}
+  \begin{itemize}
+    \item Ein ,,heiliges'' Repository für alle Benutzer
+    \item Repository meist auf einem Server
+    \item Jedes Einchecken von Änderungen benötigt Zugriff auf das Repository, also Netzwerkverbindung
+    \item Beispiele: CVS, Subversion
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Dezentrale Versionsverwaltung}
+  \begin{itemize}
+    \item Arbeitskopie beinhaltet automatisch Repository
+    \item Repositories können im Netz veröffentlicht werden
+    \item Veröffentlichte Repositories können geklont werden
+    \item Beispiele: git, Bazaar, Mercurial, Monotone
+  \end{itemize}
 \end{frame}
 
 % vim: tabstop=2 expandtab shiftwidth=2 softtabstop=2 autoindent
