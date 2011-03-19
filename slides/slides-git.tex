@@ -28,6 +28,17 @@
   morestring=[b]{"}
 }
 
+\lstdefinelanguage{diff}
+{
+  morekeywords={+, -},
+  sensitive=false,
+  morecomment=[l]{//},
+  morecomment=[s]{/*}{*/},
+  morecomment=[l][\color{darkgreen}]{+},
+  morecomment=[l][\color{red}]{-},
+  morestring=[b]",
+}
+
 \lstset{
   extendedchars=\true,
   language=BashExamples,
@@ -76,6 +87,7 @@
 
 \include{sections/versionsverwaltung}
 \include{sections/git}
+\include{sections/branch-merge}
 
 \begin{frame}{Referenzen}
 \begin{description}
