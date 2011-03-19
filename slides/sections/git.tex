@@ -60,16 +60,16 @@ $ git config --global core.editor whatever
   \begin{itemize}
     \item Initialisieren eines git Repositories
     \begin{lstlisting}
-cd meinprojekt
-git init
+$ cd meinprojekt
+$ git init
     \end{lstlisting}
     \item Dateien der „staging area“ hinzufügen
     \begin{lstlisting}
-git add <file>
+$ git add <file>
     \end{lstlisting}
     \item Änderungen in der „staging area“ committen
     \begin{lstlisting}
-git commit -m 'initial commit'
+$ git commit -m 'initial commit'
     \end{lstlisting}
     \end{itemize}
 \end{frame}
@@ -78,15 +78,15 @@ git commit -m 'initial commit'
   \begin{itemize}
     \item Den aktuellen Status des Repositories betrachten
     \begin{lstlisting}
-git status
+$ git status
     \end{lstlisting}
     \item Änderungen im Arbeitsverzeichnis betrachten
     \begin{lstlisting}
-git diff
+$ git diff
     \end{lstlisting}
     \item Änderungen betrachten, die sich bereits in der „staging area“ befinden
     \begin{lstlisting}
-git diff --cached
+$ git diff --cached
     \end{lstlisting}
   \end{itemize}
 \end{frame}
@@ -96,13 +96,13 @@ git diff --cached
     \item keine temporären Dateien in das git Repository aufnehmen
     \begin{itemize}
       \item erschwert das effiziente Arbeiten mit git
-      \item bläht das Repository auf
-    \begin{lstlisting}
-cat .gitignore
+      \item bläht das Repository unnötig auf
+      \lstset{frame=single}
+      \begin{lstlisting}[caption=Inhalt der Datei .gitignore]
 *.swp       #alle swp Dateien
 doc/*.aux   #alle aux Dateien im Verzeichnis doc/
 tmp/**/*    #alle Dateien im Verzeichnis tmp/
-    \end{lstlisting}
+      \end{lstlisting}
     \end{itemize}
   \end{itemize}
 \end{frame}
