@@ -47,10 +47,10 @@ $ git config --global core.editor whatever
     \end{column}
     \begin{column}{0.65\textwidth}
       \begin{itemize}
-        \item nicht versioniert (\textbf{untracked})
-        \item versioniert, aber unverändert (\textbf{unmodified})
-        \item versioniert und verändert (\textbf{modified})
-        \item versioniert, verändert und in der „staging area“ (\textbf{staged})
+        \item Nicht versioniert (\textbf{untracked})
+        \item Versioniert, aber unverändert (\textbf{unmodified})
+        \item Versioniert und verändert (\textbf{modified})
+        \item Versioniert, verändert und in der „staging area“ (\textbf{staged})
       \end{itemize}
     \end{column}
   \end{columns}
@@ -200,10 +200,10 @@ $ git log --pretty=format:'%h : %s' --topo-order --graph
 
 \begin{frame}[fragile, allowframebreaks]{Tipps und Tricks}
   \begin{itemize}
-    \item keine temporären Dateien in das git Repository aufnehmen
+    \item Keine temporären Dateien in das git Repository aufnehmen
     \begin{itemize}
-      \item erschwert das effiziente Arbeiten mit git
-      \item bläht das Repository unnötig auf
+      \item Erschwert das effiziente Arbeiten mit git
+      \item Bläht das Repository unnötig auf
     \end{itemize}
   \end{itemize}
   \begin{lstlisting}[frame=single, caption=Inhalt der Datei .gitignore]
@@ -214,10 +214,10 @@ tmp/**/*    #alle Dateien im Verzeichnis tmp/
   \framebreak
 
   \begin{itemize}
-    \item „gute“ commit messages \ldots
+    \item „Gute“ commit messages \ldots
     \begin{itemize}
-      \item vereinfachen die Zusammenarbeit
-      \item ermöglichen das schnelle Verfolgen von Änderungen
+      \item Vereinfachen die Zusammenarbeit
+      \item Ermöglichen das schnelle Verfolgen von Änderungen
     \end{itemize}
   \end{itemize}
   \begin{lstlisting}[frame=single,caption={Quelle: \url{http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html}}]
@@ -235,23 +235,23 @@ two together.
   \begin{itemize}
     \item Tagging
     \begin{itemize}
-      \item verpasst einem bestimmten Versionsstand eine Markierung
-      \item wird oft vewendet, um Releases zu markieren (Bsp: \texttt{v1.1})
-      \item ermöglicht das schnelle Arbeiten mit unterschiedlichen Versionen des Repositories
+      \item Verpasst einem bestimmten Versionsstand eine Markierung
+      \item Wird oft vewendet, um Releases zu markieren (Bsp: \texttt{v1.1})
+      \item Ermöglicht das schnelle Arbeiten mit unterschiedlichen Versionen des Repositories
     \end{itemize}
-  \item alle existierenden Tags anzeigen
+  \item Alle existierenden Tags anzeigen
     \begin{lstlisting}
 $ git tag
     \end{lstlisting}
-  \item einen einfachen Tag erstellen
+  \item Einen einfachen Tag erstellen
     \begin{lstlisting}
 $ git tag v1.1
     \end{lstlisting}
-  \item einen ausführlichen Tag erstellen (mit Name, commit message, \ldots)
+  \item Einen ausführlichen Tag erstellen (mit Name, commit message, \ldots)
     \begin{lstlisting}
 $ git tag -a v1.1
     \end{lstlisting}
-  \item einen ausführlichen, mit GPG signierten, Tag erstellen
+  \item Einen ausführlichen, mit GPG signierten, Tag erstellen
     \begin{lstlisting}
 $ git tag -s v1.1
     \end{lstlisting}
