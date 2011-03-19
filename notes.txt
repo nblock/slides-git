@@ -10,7 +10,9 @@ allgemeines
  -git init workflow (edit, add, commit)
  -git[g,k]
  -status, diff (viewer)
- -Tipps und Tricks (commit messages, gitignore, …)
+ -Tipps und Tricks (commit messages, gitignore, tagging …)
+
+branching & merging
 
 collaboration
  -git clone (bekanntes beispiel, viele branches)
@@ -18,7 +20,5 @@ collaboration
  -gitorious anlegen und clone von demo projekt
  -editieren & commit
  -git push
-
-branching & merging bei bedarf
 
 referenzen
