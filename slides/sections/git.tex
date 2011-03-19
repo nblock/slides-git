@@ -96,13 +96,13 @@ git diff --cached
     \item keine temporären Dateien in das git Repository aufnehmen
     \begin{itemize}
       \item erschwert das effiziente Arbeiten mit git
-      \item bläht das Repository auf
-    \begin{lstlisting}
-cat .gitignore
+      \item bläht das Repository unnötig auf
+      \lstset{frame=single}
+      \begin{lstlisting}[caption=Inhalt der Datei .gitignore]
 *.swp       #alle swp Dateien
 doc/*.aux   #alle aux Dateien im Verzeichnis doc/
 tmp/**/*    #alle Dateien im Verzeichnis tmp/
-    \end{lstlisting}
+      \end{lstlisting}
     \end{itemize}
   \end{itemize}
 \end{frame}
