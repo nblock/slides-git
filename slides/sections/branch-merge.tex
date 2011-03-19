@@ -33,5 +33,18 @@ $ git checkout -b <branchname>
 
 \end{frame}
 
+\begin{frame}[allowframebreaks,fragile]{Merging}
+  \begin{itemize}
+    \item Zusammenführen mehrerer Branches
+    \item Umfangreiche Unterstützung bei Konflikten
+    \item Merging:
+    \begin{lstlisting}
+$ git checkout <branch>       # checkout <branch>
+$ git merge <otherbranch>     # merge <otherbranch> into <branch>
+$ git branch -d <otherbranch> # optionally delete <otherbranch>
+    \end{lstlisting}
+  \end{itemize}
+\end{frame}
+
 
 % vim: tabstop=2 expandtab shiftwidth=2 softtabstop=2 autoindent
