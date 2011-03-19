@@ -79,4 +79,17 @@
   \end{itemize}
 \end{frame}
 
+\begin{frame}[fragile]{Git Repositories klonen}
+  \begin{itemize}
+    \item Git kopiert beim Klonen immer die vollständige Versionshistorie
+    \item Die Adresse des geklonten Repositories wird automatisch mit dem Namen „origin“ angelegt
+    \item Die Quellen dieses Workshops klonen:
+    \begin{lstlisting}
+$ git clone git://gitorious.org/valug/git-slides.git  #clone via git
+$ git clone git@gitorious.org:valug/git-slides.git    #clone via ssh
+$ git clone http://gitorious.org/valug/git-slides     #clone via http
+    \end{lstlisting}
+  \end{itemize}
+\end{frame}
+
 % vim: tabstop=2 expandtab shiftwidth=2 softtabstop=2 autoindent
