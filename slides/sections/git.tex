@@ -57,21 +57,31 @@ $ git config --global core.editor whatever
 \end{frame}
 
 \begin{frame}[fragile]{Die ersten Schritte}
-  \begin{itemize}
-    \item Initialisieren eines git Repositories
-    \begin{lstlisting}
+  \begin{columns}
+    \begin{column}{0.65\textwidth}
+      \begin{itemize}
+        \item Initialisieren eines git Repositories
+        \begin{lstlisting}
 $ cd meinprojekt
 $ git init
-    \end{lstlisting}
-    \item Dateien zur „staging area“ hinzufügen
-    \begin{lstlisting}
+        \end{lstlisting}
+        \item Dateien zur „staging area“ hinzufügen
+        \begin{lstlisting}
 $ git add <file>
-    \end{lstlisting}
-    \item Änderungen der „staging area“ committen
-    \begin{lstlisting}
+        \end{lstlisting}
+        \item Änderungen der „staging area“ committen
+        \begin{lstlisting}
 $ git commit -m 'initial commit'
-    \end{lstlisting}
-    \end{itemize}
+        \end{lstlisting}
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.35\textwidth}
+      \begin{figure}
+        \includegraphics[width=\textwidth]{img/addcommit}
+        \caption[format=empty]{Quelle: \url{http://whygitisbetterthanx.com}}
+      \end{figure}
+    \end{column}
+  \end{columns}
 \end{frame}
 
 \begin{frame}[fragile]{Status betrachten}
