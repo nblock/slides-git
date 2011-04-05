@@ -56,14 +56,14 @@ $ git config --global core.editor whatever
   \end{columns}
 \end{frame}
 
-\begin{frame}[fragile]{typischer Workflow}
+\begin{frame}[fragile]{Die ersten Schritte}
   \begin{itemize}
     \item Initialisieren eines git Repositories
     \begin{lstlisting}
 $ cd meinprojekt
 $ git init
     \end{lstlisting}
-    \item Dateien der „staging area“ hinzufügen
+    \item Dateien zur „staging area“ hinzufügen
     \begin{lstlisting}
 $ git add <file>
     \end{lstlisting}
@@ -122,6 +122,29 @@ index 12c5ea5..800639c 100644
  \begin{frame}
    \tableofcontents[currentsection]
   \end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]{typischer Workflow}
+  \begin{itemize}
+    \item Bestehende Dateien verändern
+    \item Neue Dateien in die Versionsverwaltung aufnehmen
+    \begin{lstlisting}
+$ git add <newfile>
+    \end{lstlisting}
+    \item Den Status des Repository betrachten
+    \begin{lstlisting}
+$ git status
+    \end{lstlisting}
+    \item Die Änderungen betrachten
+    \begin{lstlisting}
+$ git diff
+$ git diff --cached
+    \end{lstlisting}
+    \item Alle neuen und veränderten Dateien committen
+    \begin{lstlisting}
+$ git commit -am 'add foo'
+    \end{lstlisting}
+    \end{itemize}
 \end{frame}
 
 \begin{frame}[fragile, allowframebreaks]{Historie betrachten}
