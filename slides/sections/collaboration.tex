@@ -94,6 +94,36 @@ $ git clone http://gitorious.org/valug/git-slides     #klonen via http
   \end{itemize}
 \end{frame}
 
+\begin{frame}[fragile,allowframebreaks]{Remotes}
+  \begin{itemize}
+    \item Git merkt sich mittels Remotes,
+    \begin{itemize}
+      \item von wo Änderungen abgeholt werden können
+      \item wo Änderungen publiziert werden können
+    \end{itemize}
+    \item Bei \texttt{git clone} wird Repository automatisch
+        als \textbf{origin} konfiguriert
+    \item Remotes auflisten:
+    \begin{lstlisting}
+$ git remote    # Die Namen der Remotes auflisten
+$ git remote -v # Die Namen und URLs der Remotes auflisten
+    \end{lstlisting}
+  \end{itemize}
+  \framebreak
+
+  \begin{itemize}
+    \item Remotes hinzufügen:
+    \begin{lstlisting}
+$ git remote add <remotename> <url>
+    \end{lstlisting}
+    \item Remotes entfernen:
+    \begin{lstlisting}
+$ git remote rm <remotename>
+    \end{lstlisting}
+  \end{itemize}
+
+\end{frame}
+
 \begin{frame}[fragile]{Die Änderungen vom Remote Repository abholen}
   \begin{itemize}
     \item Den aktuellen Versionsstand vom Remote Repository abholen, aber noch nicht in die eigene Arbeitskopie einpflegen:
