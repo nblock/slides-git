@@ -6,5 +6,6 @@
 *.snm
 *.toc
 .*.swp
+.*.swo
 *.vrb
 *.fdb_latexmk
