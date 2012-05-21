@@ -1,6 +1,11 @@
 #requires latexmk from http://www.phys.psu.edu/~collins/software/latexmk-jcc/ to build
 
-pdf: slides-git.tex
+TARGET = slides-git.tex
+
+live: ${TARGET}
+	@latexmk -pvc -pdf $<
+
+pdf: ${TARGET}
 	@latexmk -pdf $<
 
 clean:
